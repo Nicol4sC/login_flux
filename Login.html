@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+</head>
+
+<script>
+    function enquanto_login() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    while (recorrente) {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Nicolas") {
+            if (senha == "punpun") {
+                window.alert("senha e usuario corretos");
+                recorrente = false;
+            } else {
+                window.alert("usuario ou senha incorretos");
+            }
+        } else {
+            window.alert("usuario ou senha incorretos");
+        }
+    }
+}
+
+
+ function faca_login() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    do {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Nicolas") {
+            if (senha == "punpun") {
+                window.alert("senha e usuario corretos");
+                recorrente = false;
+            } else {
+                window.alert("usuario ou senha incorretos");
+            }
+        } else {
+            window.alert("usuario ou senha incorretos");
+        }
+    } while (recorrente);
+}
+</script>
+<body>
+<button onclick="enquanto_login()">login enquanto</button>
+
+<button onclick="faca_login()">login faça</button>
+</body>
+</html>
+
